@@ -1,3 +1,5 @@
+Encoding.default_external = "UTF-8" # This handles encoding issues encountered on Windows at Penn State Libraries
+
 #
 # Sample configuration from MARC to Solr indexing
 # Uses traject: https://github.com/traject-project/traject

@@ -2,7 +2,8 @@ source "https://rubygems.org"
 
 gem 'marc'
 gem 'rspec'
-gem 'traject', :git => 'https://github.com/traject-project/traject.git'
+gem 'traject'
+gem 'library_stdnums'
 
 #Check if we are using jruby and store.
 is_jruby = RUBY_ENGINE == 'jruby'

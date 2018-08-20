@@ -4,10 +4,11 @@ This project transforms MARC records into Solr documents using the [Traject](htt
 
 Setup:
 
+
 ```
 git clone https://github.com/ruthtillman/starter_traject.git
 cd starter_traject
-bundle install
+gem install traject
 ```
 
 For testing purposes you can run `traject` with the `--debug-mode` flag to display the output to the console (and not push the data to Solr).

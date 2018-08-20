@@ -5,7 +5,7 @@ This project transforms MARC records into Solr documents using the [Traject](htt
 Setup:
 
 ```
-git clone [url]
+git clone https://github.com/ruthtillman/starter_traject.git
 cd starter_traject
 bundle install
 ```

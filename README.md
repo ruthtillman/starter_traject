@@ -1,4 +1,4 @@
-# new_traject
+# starter_traject
 
 This project transforms MARC records into Solr documents using the [Traject](https://github.com/traject-project/traject) tools developed by [Bill Dueber](https://github.com/billdueber/) and [Jonathan Rochkind](https://github.com/jrochkind). This repo was adapted by [Ruth Kitchin Tillman](https://github.com/ruthtillman) from Penn State's Traject project. The project does not include instructions for using Solr, as it is intended for library workers to experiment with building textual indexes via the debug mode.
 
@@ -6,7 +6,7 @@ Setup:
 
 ```
 git clone [url]
-cd new_traject
+cd starter_traject
 bundle install
 ```
 

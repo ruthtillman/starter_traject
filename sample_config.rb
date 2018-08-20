@@ -120,23 +120,7 @@ to_field 'subject_t', extract_marc(%W(
   653a:654abcde:655abc
 ).join(':'))
 to_field 'subject_addl_t', extract_marc("600vwxyz:610vwxyz:611vwxyz:630vwxyz:650vwxyz:651vwxyz:654vwxyz:655vwxyz")
-to_field 'subject_topic_facet', extract_marc("600abcdq:610ab:611ab:630aa:650aa:653aa:654ab:655ab", :trim_punctuation => true)
-
-# Material description displays
-
-to_field 'material_type_display', extract_marc('300a', :trim_punctuation => true) # from original traject, needs re-evaluation for use. May be replaced by phys_desc_display?
-to_field "phys_desc_display", extract_marc("300abcefg3:340abcdefhijkmno") # we should review these for whether trim punctuation is needed
-to_field "form_work_display", extract_marc("380a")
-# this field will need to be interpreted to HH:MM:SS
-to_field "duration_display", extract_marc("306a")
-to_field "sound_display", extract_marc("344abcdefgh")
-to_field "music_numerical_display", extract_marc("383abcde")
-to_field "music_format_display", extract_marc("348a")
-to_field "music_key_display", extract_marc("384a")
-to_field "performance_display", extract_marc("382abdenprst") # this will need to be parsed to be useful, it may need more delicate indexing.
-to_field "audience_display", extract_marc("385ma")
-to_field "video_file_display", extract_marc("346ab3")
-to_field "digital_file_display", extract_marc("347abcdef3")
+to_field 'subject_topic_facet', extract_marc("600abcdq:610ab:611ab:630aa:650aa:653aa:654ab:655ab", :trim_punctuation => true)# Material description displays
 
 # serials fields
 

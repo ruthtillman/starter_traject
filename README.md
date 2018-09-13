@@ -20,5 +20,5 @@ traject --debug-mode -c sample_config.rb /full/path/to/marcfile.mrc
 To write it out to a file, use the `> filename.txt` command to write it to a text file, e.g.
 
 ```
-traject --debug-mode -c sample_config.rb /full/path/to/marcfile.mrc > filename.txt
+traject --debug-mode -c sample_config.rb /full/path/to/marcfile.mrc > sample_index.txt
 ```

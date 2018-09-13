@@ -4,12 +4,16 @@ This project transforms MARC records into Solr documents using the [Traject](htt
 
 Setup:
 
+Ignore `gem install bundler` if you already have it installed.
 
 ```
 git clone https://github.com/ruthtillman/starter_traject.git
 cd starter_traject
-gem install traject
+gem install bundler
+bundle install
 ```
+
+(If on Windows, you may have to clone first, then open your Ruby terminal and change directories to your starter_traject project, then run `gem install bundler` followed by `bundle install`.)
 
 For testing purposes you can run `traject` with the `--debug-mode` flag to display the output to the console (and not push the data to Solr).
 

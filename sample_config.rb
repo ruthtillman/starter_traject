@@ -1,5 +1,4 @@
 Encoding.default_external = "UTF-8" # This handles encoding issues encountered on Windows at Penn State Libraries
-
 #
 # Sample configuration from MARC to Solr indexing
 # Uses traject: https://github.com/traject-project/traject
@@ -63,7 +62,6 @@ to_field "isbn_t",  extract_marc('020a', :separator=>nil) do |rec, acc|
   acc.uniq!
 end
 
-
 # Title fields
 
 to_field "title_statement_display", extract_marc("245abcfgknps", :alternate_script=> false)
@@ -122,8 +120,7 @@ to_field 'subject_t', extract_marc(%W(
   653a:654abcde:655abc
 ).join(':'))
 to_field 'subject_addl_t', extract_marc("600vwxyz:610vwxyz:611vwxyz:630vwxyz:650vwxyz:651vwxyz:654vwxyz:655vwxyz")
-to_field 'subject_topic_facet', extract_marc("600abcdq:610ab:611ab:630aa:650aa:653aa:654ab:655ab", :trim_punctuation => true)# Material description displays
-
+to_field 'subject_topic_facet', extract_marc("600|*0|abcdq:610|*0|ab:611|*0|ab:630|*0|ab:650|*0|a:653|*0|a", :trim_punctuation => true)
 # serials fields
 
 to_field "frequency_display", extract_marc("310ab:321ab") # this version has the dates combined, vs. current and ongoing. However, as former things hould have dates attached and will be secondary, it should work for display.
